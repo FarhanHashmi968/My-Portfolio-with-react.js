@@ -1,0 +1,94 @@
+.HomeDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myImage {
+  margin-top: 1.9rem;
+}
+
+.myImage img {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+}
+
+.HomeDiv h1 {
+  width: 65%;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.4rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.HomeDiv span {
+  background: linear-gradient(to right, rgb(215, 5, 215), rgb(196, 128, 3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.HomeDiv p {
+  width: 50%;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  margin-block: 1rem;
+}
+
+.buttonsGroup {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 3.1rem;
+}
+
+.connectButton {
+  padding: 1.25rem 1.8rem;
+  border-radius: 3.1rem;
+  background: linear-gradient(to right, rgb(215, 5, 215), rgb(196, 128, 3));
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.connectButton:hover {
+  border: 2px solid white;
+  transform: scale(1.02);
+}
+
+.resumeButton {
+  font-size: 1rem;
+  padding: 1.25rem 3.4rem;
+  border-radius: 3.1rem;
+  border: 2px solid #fff;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+}
+.resumeButton:hover {
+  border: 2px solid rgb(215, 5, 215);
+}
+
+/* Responsiveness code */
+@media screen and (max-width: 768px) {
+  .myImage {
+    margin-top: 5rem;
+  }
+  .myImage img {
+    width: 13rem;
+    height: 13rem;
+  }
+  .HomeDiv h1 {
+    width: 95%;
+    font-size: 2.8rem;
+  }
+  .HomeDiv p {
+    width: 75%;
+    margin-block: 1.5rem;
+  }
+}

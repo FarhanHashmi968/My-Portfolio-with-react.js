@@ -1,0 +1,78 @@
+.servicesBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 4.4rem 10%;
+}
+
+.head h1 {
+  padding: 0 1.87rem;
+  font-size: 3.75rem;
+  font-weight: 600;
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.87rem;
+  margin-bottom: 3.1rem;
+}
+
+.skillbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.62rem;
+  padding: 1.87rem;
+  border-radius: 0.62rem;
+  border: 2px solid white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.skillbox:hover {
+  transform: scale(1.03);
+  border-color: rgb(209, 1, 209);
+  background: linear-gradient(to right, rgb(72, 0, 72), rgb(79, 51, 0));
+}
+
+.skillbox h3 {
+  font-size: 1.37rem;
+  font-weight: 600;
+}
+
+.skillbox h2 {
+  font-size: 1.87rem;
+  font-weight: 800;
+  background: linear-gradient(to right, rgb(215, 5, 215), rgb(196, 128, 3));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skillbox p {
+  color: #d4d4d4;
+  font-size: 1.25rem;
+  line-height: 1.87rem;
+  max-width: 18.75rem;
+}
+
+/* Responsiveness code */
+@media screen and (max-width: 768px) {
+  .servicesBox {
+    gap: 4rem;
+    margin: 4.4rem 7%;
+    align-items: flex-start;
+  }
+
+  .head h1 {
+    padding: 0;
+    font-size: 2.5rem;
+  }
+
+  .skillsContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}

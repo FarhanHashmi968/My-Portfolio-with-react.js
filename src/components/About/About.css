@@ -1,0 +1,110 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.75rem;
+  margin: 4.4rem 10%;
+}
+
+.about h1 {
+  padding: 0 1.8rem;
+  font-size: 3.75rem;
+  font-weight: 600;
+}
+
+.aboutDescription {
+  display: flex;
+  gap: 3.75rem;
+}
+
+.aboutLeft img {
+  width: 18.75rem;
+  border-radius: 0.6rem;
+  height: 25rem;
+}
+
+.aboutRight {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.html,
+.css,
+.javascript,
+.reactjs,
+.tailwindcss,
+.bootstrap,
+.github {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.html:hover,
+.css:hover,
+.javascript:hover,
+.reactjs:hover,
+.tailwindcss:hover,
+.bootstrap:hover,
+.github:hover {
+  transform: scale(1.03);
+}
+
+.html p,
+.css p,
+.javascript p,
+.reactjs p,
+.tailwindcss p,
+.bootstrap p,
+.github p {
+  min-width: 8.1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.html hr,
+.css hr,
+.javascript hr,
+.reactjs hr,
+.tailwindcss hr,
+.bootstrap hr,
+.github hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 0.5rem;
+  border-radius: 3.2rem;
+  background: linear-gradient(to right, rgb(215, 5, 215), rgb(196, 128, 3));
+}
+
+/* Responsiveness code */
+@media screen and (max-width: 768px) {
+  .about {
+    margin: 4.4rem 1%;
+    gap: 2.5rem;
+  }
+  .aboutLeft img {
+    display: none;
+  }
+  .about h1 {
+    width: 93%;
+    font-size: 2.5rem;
+  }
+}

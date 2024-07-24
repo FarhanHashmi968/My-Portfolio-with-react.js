@@ -1,0 +1,103 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+  padding-inline: 7rem;
+  font-size: 1.1rem;
+}
+
+.navbar span {
+  font-size: 2.4rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 30rem;
+}
+.navbar ul li {
+  cursor: pointer;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.contactButton {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(215, 5, 215),
+    rgb(196, 128, 3)
+  );
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease-in;
+  font-size: 1rem;
+}
+
+.contactButton:hover {
+  transform: scale(1.03);
+}
+
+/* writing code for active class */
+.active {
+  border-bottom: 4px solid rgb(252, 117, 252);
+}
+
+.menuButton {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+.closeButton {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Responsiveness code */
+
+@media screen and (max-width: 1020px) {
+  .menuButton {
+    display: block;
+  }
+
+  .closeButton {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 7%;
+  }
+  .navbar ul {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    gap: 2.18rem;
+    background-color: #1f0016;
+    width: 18.75rem;
+    height: 100%;
+    z-index: 2000;
+    transition: right 0.5s;
+    right: -18.75rem;
+    padding-top: 100px;
+    justify-content: flex-start;
+  }
+  .navbar ul li {
+    font-size: 1.5rem;
+  }
+  .contactButton {
+    display: none;
+  }
+  .navbar {
+    padding-inline: 2rem;
+  }
+}
